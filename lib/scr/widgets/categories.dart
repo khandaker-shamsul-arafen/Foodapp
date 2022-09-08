@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../models/category.dart';
-import 'commons.dart';
+import '../helpers/commons.dart';
 import 'custom_Text.dart';
+
 List<Category>categoriesList =[
   Category(name:"Salad",image:"salad.png"),
   Category(name:"Sandwitch",image:"sandwich.png"),
