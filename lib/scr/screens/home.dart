@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food/scr/helpers/screen_navigation.dart';
 import 'package:food/scr/widgets/categories.dart';
 import 'package:food/scr/helpers/commons.dart';
 
@@ -7,6 +8,7 @@ import '../models/featured_products.dart';
 import '../widgets/button_navigation_icns.dart';
 import '../widgets/custom_Text.dart';
 import '../widgets/small_floating_button.dart';
+import 'bag.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -290,14 +292,16 @@ class _HomeState extends State<Home> {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 75,
+        height: 85,
         color: white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            BottomNavicon(name: 'Home', image: 'home.png',),
-            BottomNavicon(name: 'Near me', image: 'target.png',),
-            BottomNavicon(name: 'Cart', image: 'shopping-bag.png',),
+          children:  [
+            BottomNavicon(name: 'Home', image: 'home.png', onTap: (){changeScreen(context, Home());},),
+             BottomNavicon(name: 'Near me', image: 'target.png', onTap: (){changeScreen(context, Home());},),
+             BottomNavicon(name: 'Cart', image: 'shopping-bag.png', onTap: (){changeScreen(context, Bag());},),
+            BottomNavicon(name: 'Account', image: 'avatar.png', onTap: (){changeScreen(context, Home());},),
+
 
             ]
               ),

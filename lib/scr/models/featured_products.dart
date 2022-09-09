@@ -7,11 +7,11 @@ import '../screens/details.dart';
 import '../widgets/custom_Text.dart';
 
 List<Product> productList = [
-  Product("Cereals", "1.jpg", 4.2, "good food", true, 5.99),
-  Product("Ce", "2.jpg", 4.8, "delicious", false, 6.99),
-  Product("Cereals", "3.jpg", 4.7, "testy", false, 7.99),
-  Product("Cereals", "4.jpeg", 4.6, "Natural", true, 8.99),
-  Product("Cereals", "5.jpg", 4.5, "good ", true, 9.99),
+  Product("Cereals", "1.jpg", 4.2, "good food", true, 5.99,"spfjspfkapfokk"),
+  Product("Ce", "2.jpg", 4.8, "delicious", false, 6.99,"slfnjakfmamf"),
+  Product("Cereals", "3.jpg", 4.7, "testy", false, 7.99,"slkfjslkfmfmefmemf"),
+  Product("Cereals", "4.jpeg", 4.6, "Natural", true, 8.99,"selkfjfjefjepofmef"),
+  Product("Cereals", "5.jpg", 4.5, "good ", true, 9.99,"lfkslkfsklflfmkffm"),
 
 ];
 
