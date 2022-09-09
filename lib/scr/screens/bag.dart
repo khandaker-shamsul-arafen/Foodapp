@@ -84,7 +84,7 @@ class _BagState extends State<Bag> {
               height: 120,
               width: MediaQuery.of(context).size.width - 10,
               decoration: BoxDecoration(color: white, boxShadow: [
-                BoxShadow(color: red, offset: Offset(0, 1), blurRadius: 30)
+                BoxShadow(color: grey, offset: Offset(0, 1), blurRadius: 30)
               ]),
               child: Row(
 
@@ -112,6 +112,9 @@ class _BagState extends State<Bag> {
 
                       ]
                           )
+                      ),
+                      SizedBox(
+                        width: 100,
                       ),
                       IconButton(onPressed: (){}, icon: Icon(Icons.delete_outline))
                     ],

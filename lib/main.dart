@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food/scr/screens/home.dart';
+import 'package:food/scr/screens/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: login(),
     );
   }
 }
