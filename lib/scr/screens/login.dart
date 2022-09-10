@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food/scr/helpers/commons.dart';
+import 'package:food/scr/helpers/screen_navigation.dart';
+import 'package:food/scr/screens/registration.dart';
 import 'package:food/scr/widgets/custom_Text.dart';
 
 class login extends StatefulWidget {
@@ -80,7 +82,7 @@ class _loginState extends State<login> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CustomText(
-                          text: 'Loading',
+                          text: 'Log in',
                           size: 22,
                           color: white,
                           weight: FontWeight.w600),
@@ -99,13 +101,18 @@ class _loginState extends State<login> {
                 ),
               ),
             ),
-            Align(
-                alignment: Alignment.center,
-                child: CustomText(
-                    text: "Register Here",
-                    size: 20,
-                    color: black,
-                    weight: FontWeight.w500))
+            GestureDetector(
+              onTap: (){
+                changeScreen(context, registration());
+              },
+              child: Align(
+                  alignment: Alignment.center,
+                  child: CustomText(
+                      text: "Register Here",
+                      size: 20,
+                      color: black,
+                      weight: FontWeight.w500)),
+            )
           ],
         ),
       ),
